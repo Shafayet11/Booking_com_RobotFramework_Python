@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220602 10:40:03.095" rpa="false" schemaversion="3">
+<suite id="s1" name="testTC 2.1" source="D:\Shafayet\Booking_robot\TestCases\testTC_2.1.robot">
+<test id="s1-t1" name="Web_TC1" line="11">
+<kw name="open my browser" library="TC_2.1Page">
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220602 10:40:03.238" level="INFO">Opening browser 'chrome' to base url 'https://www.booking.com/'.</msg>
+<status status="PASS" starttime="20220602 10:40:03.238" endtime="20220602 10:40:06.334"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220602 10:40:06.334" endtime="20220602 10:40:06.446"/>
+</kw>
+<status status="PASS" starttime="20220602 10:40:03.238" endtime="20220602 10:40:06.446"/>
+</kw>
+<kw name="Click Register Link" library="TC_2.1Page">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${Reg_btn}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220602 10:40:06.447" level="INFO">Clicking link '//header/nav[1]/div[2]/div[5]/a[1]'.</msg>
+<status status="PASS" starttime="20220602 10:40:06.447" endtime="20220602 10:40:08.353"/>
+</kw>
+<status status="PASS" starttime="20220602 10:40:06.447" endtime="20220602 10:40:08.353"/>
+</kw>
+<kw name="Enter Email" library="TC_2.1Page">
+<arg>qups123@gmail.com</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Enter_email}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220602 10:40:08.355" level="INFO">Typing text 'qups123@gmail.com' into text field '//input[@id='username']'.</msg>
+<status status="PASS" starttime="20220602 10:40:08.353" endtime="20220602 10:40:08.447"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220602 10:40:10.462" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220602 10:40:08.448" endtime="20220602 10:40:10.462"/>
+</kw>
+<status status="PASS" starttime="20220602 10:40:08.353" endtime="20220602 10:40:10.462"/>
+</kw>
+<kw name="Click Continue Link" library="TC_2.1Page">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Email_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220602 10:40:10.463" level="INFO">Clicking element '//span[contains(text(),'Continue with email')]'.</msg>
+<status status="PASS" starttime="20220602 10:40:10.463" endtime="20220602 10:40:10.522"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220602 10:40:12.524" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220602 10:40:10.522" endtime="20220602 10:40:12.524"/>
+</kw>
+<status status="PASS" starttime="20220602 10:40:10.463" endtime="20220602 10:40:12.524"/>
+</kw>
+<kw name="New Password" library="TC_2.1Page">
+<arg>Qups12345678</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${New_pass}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220602 10:40:12.525" level="INFO">Typing text 'Qups12345678' into text field '//input[@id='new_password']'.</msg>
+<status status="PASS" starttime="20220602 10:40:12.525" endtime="20220602 10:40:12.596"/>
+</kw>
+<status status="PASS" starttime="20220602 10:40:12.525" endtime="20220602 10:40:12.596"/>
+</kw>
+<kw name="Confirm Password" library="TC_2.1Page">
+<arg>Qups12345678</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Con_pass}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220602 10:40:12.597" level="INFO">Typing text 'Qups12345678' into text field '//input[@id='confirmed_password']'.</msg>
+<status status="PASS" starttime="20220602 10:40:12.597" endtime="20220602 10:40:12.673"/>
+</kw>
+<status status="PASS" starttime="20220602 10:40:12.597" endtime="20220602 10:40:12.673"/>
+</kw>
+<kw name="Click Create" library="TC_2.1Page">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Create_ac}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220602 10:40:12.674" level="INFO">Clicking element '//span[contains(text(),'Create account')]'.</msg>
+<status status="PASS" starttime="20220602 10:40:12.674" endtime="20220602 10:40:12.708"/>
+</kw>
+<status status="PASS" starttime="20220602 10:40:12.674" endtime="20220602 10:40:12.708"/>
+</kw>
+<status status="PASS" starttime="20220602 10:40:03.237" endtime="20220602 10:40:12.709"/>
+</test>
+<test id="s1-t2" name="[Teardown]" line="19">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220602 10:40:12.710" endtime="20220602 10:40:14.852"/>
+</kw>
+<status status="PASS" starttime="20220602 10:40:12.710" endtime="20220602 10:40:14.853"/>
+</test>
+<status status="PASS" starttime="20220602 10:40:03.096" endtime="20220602 10:40:14.856"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="testTC 2.1">testTC 2.1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
